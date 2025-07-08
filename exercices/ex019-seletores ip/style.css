@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*
+em HTML é id    = em CSS é #
+em HTML é class = CSS é .
+ID sobrepoe class
+*/
+
+body {
+    background-color: rgba(224, 113, 244, 0.43);
+}
+
+h1 {
+    color: rgb(85, 14, 86);
+}
+
+#principal {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    color: rgb(178, 19, 165);
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: rgba(255, 255, 0, 0.622);
+}

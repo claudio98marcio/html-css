@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="project-c010/imagens/favicon.ico" type="image/x-icon">
+    <title>Challenge 10</title>
+    <style>
+        /*
+        #042940 - Dark
+        #005C53 - Light Dark
+        #9FC131 - Lima
+        #DBF227 - Light Lima
+        #D6D58E - Light Brown
+        */
+        body{
+            background-color: #DBF227;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header{
+            background-color:  #9FC131;
+            margin: auto;
+            color: white;        
+        }
+        
+        header > h1{
+            text-align: center;
+        }
+
+        header > p{
+            text-align: center;
+        }
+
+        nav{
+            background-color:  #005C53;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+        }
+
+        nav > a:hover{
+            background-color: #042940;
+        }
+
+        main{
+            background-color: rgba(255, 255, 255, 0.3);
+            margin-right: 200px;
+            margin-left: 200px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        picture > img{
+            display: block;
+            margin: 0 auto;
+        /*
+            CODE EXEMPLE OF CENTRALIZING IMAGE
+        */
+        }
+        
+        #irina >img{
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        #video01{
+            background-color: #042940;
+            margin-right: 0px;
+            margin-left: 0px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        #video01 >iframe{
+            display: block;
+            margin: 0 auto;
+        }
+
+        h2{
+            background-color: #DBF227;
+            color: #042940;
+        }
+
+        article > p > a{
+            text-decoration: none;
+        }
+
+        #androidversion{
+            background-color: #005C53;
+            color: white;
+            border-radius: 10px 10px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #androidversion > h2{
+            background-color: #042940;
+            color: white;
+            border-radius: 10px 10px 0px 0px;
+            font-size: 1em;
+            padding: 5px 0px 5px 0px;
+        }
+
+        #androidcolumn{
+            
+        }
+
+        footer{
+            background-color: #042940;
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Technology Curiosities</h1>
+        <p>Everything you ever wants to know about the world tech, in one place</p>
+    <nav>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Curi</a>
+            <a href="#">Talk with Us</a>
+        </nav>
+    </header>
+    <main>
+        <h2>History of the Android Mascot</h2>
+        <p>
+            You probally know that the <mark>Android</mark> operating system, run by <mark>Google</mark>, is one of most used for mobile devices worldwide. Maybe didn't know that its friendly mascot has a very curious name and story? Follow this article to learn a lot about this little bot.
+        </p>
+        <article>
+            <h2>First version</h2>
+            <p>
+                The first attempt to create a mascot came in 2007 and came by developer named <a href="#" target="_blank"rel="external">Dan Morrill🔗</a>. He says that opened <a href="#" target="_blank"rel="external">InkScape🔗</a> (free software to vectorizing images) and create his own robot version. The goal was to personify the sistem only for his team, there was no request from the company to create a mascot. <br>
+                <picture>
+                    <source media="(max-width: 855px)" srcset="none" type="image/png">
+                    <source media="(max-width: 1250px)" srcset="project-c010/imagens/dan-droids-pq.png" type="image/png">
+                    <img src="project-c010/imagens/dan-droids.png" alt="Dandroids-image/png">
+                </picture> <br>
+                This first bizarre version was even named after its creator: it would be the Dandroids.
+            </p>
+            <h2>A new mascot emerges</h2>
+            <p>
+                The idea of having a mascot matured and the mission was passed on to professional in the field. Russian illustrator <a href="#" target="_blank" rel="external">Irina Blok🔗</a>, also a Google employee, was given the mission to representing the little bot in a more pleasant way. <br>
+                <picture id="irina">
+                    <source media="(max-width: 855px)" srcset="none" type="image/png">
+                    <source media="(max-width: 1250px)" srcset="project-c010/imagens/irina-blok-pq.jpg" type="image/png">
+                    <img src="project-c010/imagens/irina-blok.jpg" alt="Irina Blok-image/png">
+                </picture> <br>
+                Irina's main idea was to represent everything graphically with a few lines and that flatter form. The drawing should also generate quick identification with whoever looks at it. That's how <mark>Bugdroid</mark>, Android's new mascot born. <br>
+                <picture>
+                    <img src="project-c010/imagens/bugdroid.png" alt="Dandroids-image/png">
+                </picture> <br>
+                The main inspiration for the new Bugdroid lines came from those little dolls that illustrate bathroom doors to indicate the type of each door. Legend has it that an artist was creating at his desk in Google's office and she looked at the side of the toilets and the identification was immediate: simple, clean and objective. <br>
+                <div id="video01">
+                    <iframe width="975" height="550" src="https://www.youtube.com/embed/B6nhmJ-o01Y?si=DUxni53zhU129Jzp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </article>
+        <div id="androidversion">
+            <h2>Want learn more?</h2> 
+            <p>
+                Another curious thing about Andorid is that each version has always been named after a sweet treat, in alphabetical order from version  1.5 to 9.0.
+            </p>
+                <div id="androidcolumn">
+                    <ul>
+                        <li>1.5 - Cupcake</li>
+                        <li>1.6 - Donut</li>
+                        <li>3.0 - Eclair</li>
+                        <li>2.2 - Froyo</li>
+                        <li>2.3 - Gingerbread</li>
+                        <li>3.0 - Honeycomb</li>
+                        <li>4.0 - Ice Cream Sandwich</li>
+                        <li>4.1 - Jelly Bean</li>
+                        <li>4.4 - KitKat</li>
+                        <li>5.0 - Lolipop</li>
+                        <li>6.0 - Marshmallow</li>
+                        <li>7.0 - Nougat</li>
+                        <li>8.0 - Oreo</li>
+                        <li>9.0 - Pie</li>
+                    </ul>
+                </div>
+            <p>
+                Unfortunately, Androind Q not exist, as Google decided to put an end that funny practice and started using numbering, which gabe rise to Android 10. <br>
+                Visit the Android History website here to learn about the sequence of "sweet" versions and what each brought to the Android system.
+            </p>
+        </div>
+        <p>
+            So that's it! We hope you enjoyed our article with this interesting fact about the <mark>Andorid</mark> system and its friendly mascot
+        </p>
+    </main>
+    <footer>
+        Site created by Claudio Filho.
+    </footer>
+</body>
+</html>

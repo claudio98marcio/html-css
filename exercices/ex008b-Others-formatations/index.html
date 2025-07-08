@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Other Formatations</title>
+</head>
+<body>
+    
+    <h2>Código Fonte ou Pré-formatação</h2>
+    <p>
+        Podemos perceber que os caracteres em uma determinada fonte apresenta direntes tipos de larguras, para melhor leitura e visualização quando se trata de um código utilizamos a tag <mark>&lt;code&gt;</mark> <code>document.getElemntById</code>. Para melhor leitura ainda vejamos o exemplo a seguir: <br>
+        <pre>
+            <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+    print(f'o número {num} é PAR')
+    else:
+    print(f'o número {num} é IMPAR')
+    print('Fim do programa')
+            </code>
+        </pre>
+        Para que tudo seja mostrado da maneira que está escrito acima, usa-se a tag <mark>&lt;pre&gt;</mark>. Porém vale ressaltar que o espaçamento antes de cada linha será considerad, então simplesmente selecionamos todo o texto e carregamos as teclas: <br>
+        <strong>SHIFT+TAB</strong>: Remoção de espaços; <br>
+        <strong>TAB</strong>: Adição de espaços.
+    </p>
+
+    <h2>Citações Simples</h2>
+    <p>
+        Qunado se tem a citação de alguém que queremos enfatizar <strong>PROFISSIONALMENTE</strong> vale adicionarmos a tag &lt;q&gt;, porque estamos atribuindo uma semântica ao invés inserir áspas ao texto. <br>
+        Exemplo: <br>
+        <q>
+            O fraco se rebaixa ao nível <br>
+            O vingativo se vinga <br>
+            O sábio ignora.
+        </q>
+    </p>
+
+    <h2>Citações Completas</h2>
+    <p>
+        Quando citamos por exemplo o trecho de um livro usamos a tag <mark>&lt;blockquote&gt;</mark>; e ainda a frente da tag de abertura usamos o <mark>cite</mark> para adicionarmos o link de referência do conteúdo. <br>
+        Exemplo: <br>
+        <blockquote cite="https://www.bibliaonline.com.br/acf/pv/12">
+            A ira do insensato se conhece no mesmo dia, mas o prudente encobre a afronta.
+        </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>
+        Utilizamos a tag <mark>&lt;abbr&gt;</mark> para adicionarmos um "comentario" do que significa a abreviação. <br>
+        <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascating Style Sheets">CSS</abbr>.
+    </p>
+
+    <h2>Texto invertido</h2>
+    <p>
+        Será que tem alguma utilidade? <br>
+        tag <mark>&lt;bdo&gt;</mark>, logo após é preciso selecionar se é da esquerda para a direita ou da direita para esquerda. <br>
+        L = Left to right; <br>
+        R = Right to left; <br>
+       <bdo dir="rtl">Ola Mundo</bdo> <br>
+       <bdo dir="ltr">Ola Mundo</bdo>
+    </p>
+</body>
+</html>

@@ -11,15 +11,25 @@
     --base-black: hsl(from var(--base-color) h s calc(l - 20));
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color:hsl(from var(--base-color) h s calc(l + 20))
+}
+
 header{
     background-color: var(--base-black);
     text-align: center;
-    padding: 5px 0 5px 0;
-    margin:-8px -8px 0 -8px
+    padding: 5px 0 10px 0;
+    margin:-8px -8px 0 -8px;
 }
 
 header > h1{
     font-size: 8vh;
+    font-variant: small-caps;
 }
 
 body{
@@ -32,6 +42,14 @@ section{
     background-color: var(--base-darker);
 }
 
+p{
+    padding: 30px;
+    position: absolute;
+    font-size: 1.5em;
+    top: 25%;
+    line-height: 1.5em;
+}
+
 footer{
     background-color: var(--base-black);
     color: white;
@@ -42,37 +60,19 @@ footer{
 }
 
 .normal-box{
-    padding: 30px;
-    position: absolute;
-    top: 20%;
-    left: 2%;
-    font-size: 1.5em;
 }
 
 .glass-box{
-    width: 310px;
-    padding: 30px;
+    width: 550px;
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;
     box-shadow: 2.5px 5px 5px 0 hsl(0deg 0% 0% / 0.4);
-    position: absolute;
-    top: 20%;
-    left: 55%;
-    font-size: 1.5em;
+    left: 58%;
 }
 
 #image01{
-    background: url(https://cdn.pixabay.com/photo/2017/05/10/19/23/model-2301623_1280.jpg) right center no-repeat fixed;
+    background: url(https://cdn.pixabay.com/photo/2017/05/10/19/23/model-2301623_1280.jpg) center center no-repeat fixed;
     background-size: cover;
-}
-
-#image02{
-    background: url(https://cdn.pixabay.com/photo/2017/05/10/19/23/model-2301623_1280.jpg) right center no-repeat fixed;
-    background-size: cover;
-}
-
-#image03{
-    background: url(https://cdn.pixabay.com/photo/2017/05/10/19/23/model-2301623_1280.jpg) right center no-repeat fixed;
-    background-size: cover;
+    margin: 0 -8px 0 -8px;
 }

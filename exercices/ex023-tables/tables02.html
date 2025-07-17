@@ -14,18 +14,37 @@
         }
 
         section{
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(2px);
-            border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 10px;
-            box-shadow: 2.5px 5px 5px 0 hsl(0deg 0% 0% / 0.4);
-            padding: 20px;
-            color: rgba(255, 255, 255, 0.7);
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+           
         }
 
         table{
             text-align: center;
+            width: 100%;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead{
+            background-color: hsl(120, 100%, 20%);
+        }
+
+        th{
+            border: solid 1px black;
+            color: white;
+        }
+
+        td{
+            border: solid 1px black;
+        }
+        
+        tr:nth-child(even){
+            background-color: hsl(120, 100%, 30%);
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: hsl(120, 100%, 20%);
         }
     </style>
 </head>
@@ -35,11 +54,11 @@
         <table>
             <thead>
                 <tr>
-                    <td>RANK</td>
-                    <td>DISTRICT</td>
-                    <td>POPULATION</td>
-                    <td>%</td>
-                    <td>POPULATION DENSITY</td>
+                    <th scope="col">RANK</th>
+                    <th scope="col">DISTRICT</th>
+                    <th scope="col">POPULATION</th>
+                    <th scope="col">%</th>
+                    <th scope="col">POPULATION DENSITY</th>
                 </tr>
             </thead>
             <tbody>
@@ -131,5 +150,12 @@
             </tfoot>
         </table>
     </section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptates eum ad molestias sit sed natus nostrum ea velit quod deleniti incidunt magnam quia qui facilis, iure quasi dolorum aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, optio vitae incidunt tenetur nesciunt assumenda ducimus veritatis, laboriosam beatae eveniet sunt hic debitis nulla quisquam unde. Quo at quos ipsum! <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequuntur possimus error dolore accusamus. Non, ex expedita necessitatibus error est libero asperiores tempora consequuntur aliquid consectetur voluptas eaque minima quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio incidunt quae corporis ut autem repellat eveniet alias sunt veniam fugit provident aliquam suscipit officiis repudiandae facilis qui a, iure cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptates eum ad molestias sit sed natus nostrum ea velit quod deleniti incidunt magnam quia qui facilis, iure quasi dolorum aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, optio vitae incidunt tenetur nesciunt assumenda ducimus veritatis, laboriosam beatae eveniet sunt hic debitis nulla quisquam unde. Quo at quos ipsum! <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequuntur possimus error dolore accusamus. Non, ex expedita necessitatibus error est libero asperiores tempora consequuntur aliquid consectetur voluptas eaque minima quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio incidunt quae corporis ut autem repellat eveniet alias sunt veniam fugit provident aliquam suscipit officiis repudiandae facilis qui a, iure cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptates eum ad molestias sit sed natus nostrum ea velit quod deleniti incidunt magnam quia qui facilis, iure quasi dolorum aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, optio vitae incidunt tenetur nesciunt assumenda ducimus veritatis, laboriosam beatae eveniet sunt hic debitis nulla quisquam unde. Quo at quos ipsum! <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequuntur possimus error dolore accusamus. Non, ex expedita necessitatibus error est libero asperiores tempora consequuntur aliquid consectetur voluptas eaque minima quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio incidunt quae corporis ut autem repellat eveniet alias sunt veniam fugit provident aliquam suscipit officiis repudiandae facilis qui a, iure cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptates eum ad molestias sit sed natus nostrum ea velit quod deleniti incidunt magnam quia qui facilis, iure quasi dolorum aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, optio vitae incidunt tenetur nesciunt assumenda ducimus veritatis, laboriosam beatae eveniet sunt hic debitis nulla quisquam unde. Quo at quos ipsum! <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequuntur possimus error dolore accusamus. Non, ex expedita necessitatibus error est libero asperiores tempora consequuntur aliquid consectetur voluptas eaque minima quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio incidunt quae corporis ut autem repellat eveniet alias sunt veniam fugit provident aliquam suscipit officiis repudiandae facilis qui a, iure cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptates eum ad molestias sit sed natus nostrum ea velit quod deleniti incidunt magnam quia qui facilis, iure quasi dolorum aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, optio vitae incidunt tenetur nesciunt assumenda ducimus veritatis, laboriosam beatae eveniet sunt hic debitis nulla quisquam unde. Quo at quos ipsum! <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequuntur possimus error dolore accusamus. Non, ex expedita necessitatibus error est libero asperiores tempora consequuntur aliquid consectetur voluptas eaque minima quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio incidunt quae corporis ut autem repellat eveniet alias sunt veniam fugit provident aliquam suscipit officiis repudiandae facilis qui a, iure cum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptates eum ad molestias sit sed natus nostrum ea velit quod deleniti incidunt magnam quia qui facilis, iure quasi dolorum aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, optio vitae incidunt tenetur nesciunt assumenda ducimus veritatis, laboriosam beatae eveniet sunt hic debitis nulla quisquam unde. Quo at quos ipsum! <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae consequuntur possimus error dolore accusamus. Non, ex expedita necessitatibus error est libero asperiores tempora consequuntur aliquid consectetur voluptas eaque minima quis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio incidunt quae corporis ut autem repellat eveniet alias sunt veniam fugit provident aliquam suscipit officiis repudiandae facilis qui a, iure cum?</p>
 </body>
 </html>

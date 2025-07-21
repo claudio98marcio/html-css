@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW EXERCICES WITH TABLES</title>
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        table {
+            width: 800px;
+            height: 200px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: solid black;
+        }
+
+        thead {
+            background-color: rgb(80, 80, 80);
+            color: white;
+        }
+
+        .emphasis-section {
+            text-align: left;
+            background-color: rgb(80, 80, 80);
+            color: white;
+        }
+
+        .number-section {
+            text-align: center;
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td rowspan="2">AREA</td>
+                <td rowspan="2">DISCIPLINES</td>
+                <td colspan="2">GRADES</td>
+                <td rowspan="2">AVERAGE</td>
+            </tr>
+            <tr>
+                <td>Grade 01</td>
+                <td>Grade 02</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="4">Exacts</td>
+                <td>Mathematcs</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Physics</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Chemistry</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Biology</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+
+        <tbody class="emphasis-section">
+            <th colspan="4">Exacts Average</th>
+            <th class="number-section">0.0</th>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Humanities</td>
+                <td>History</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Geography</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+
+        <tbody class="emphasis-section">
+            <th colspan="4">Humanities Average</th>
+            <th class="number-section">0.0</th>
+    </table>
+        
+</body>
+</html>

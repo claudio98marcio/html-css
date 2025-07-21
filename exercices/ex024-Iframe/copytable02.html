@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Span</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        thead {
+            display: table-header-group;
+        }
+        .c1 {
+            background-color: rgba(255, 255, 0, 0.5);
+        }
+        .c3 {
+            background-color: rgba(0, 255, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="c1">
+            <col class="c2">
+            <col class="c3">
+            <col class="c4">
+        </colgroup>
+        <thead>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Occupation</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice Ashford</td>
+                <td>33</td>
+                <td>Female</td>
+                <td>Doctor</td>
+            </tr>
+            <tr>
+                <td>Claire Redfield</td>
+                <td>28</td>
+                <td>Female</td>
+                <td>Searcher</td>
+            </tr>
+            <tr>
+                <td>Michael Kyle</td>
+                <td>46</td>
+                <td>Male</td>
+                <td>Businessman</td>
+            </tr>
+            <tr>
+                <td>Albert Wesker</td>
+                <td>50</td>
+                <td>Male</td>
+                <td>Scientist</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary</title>
+</head>
+<body>
+    <h1>Testing new controls</h1>
+    <form action="record.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Owner data</legend>
+            <p>
+                <label for="iname">Name:</label>
+                <input type="text" name="name" id="iname" required placeholder="Enter your Name" size="20" autocomplete="username">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required placeholder="Enter your Email" size="20" autocomplete="email">
+            </p>
+            <p>
+                <label for="iphone">Portugal Phone:</label>
+                <input type="tel" name="phone" id="iphone" required placeholder="XXX-XXX-XXX" size="20" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            </p>
+            <p>
+                <label for="iphone">Brazilian Phone:</label>
+                <input type="tel" name="phone" id="iphone" required placeholder="(XX) XXXXX-XXXX" size="20" autocomplete="tel" pattern="^\(\d{2}\)[0-9]{5}-[0-9]{4}">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

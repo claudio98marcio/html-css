@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary</title>
+</head>
+<body>
+    <h1>Select,Datalist and textarea</h1>
+    <form action="record.php" method="get" autocomplete="on">
+        <p>
+            <label for="istate">State:</label>
+            <select name="state" id="istate">
+
+                <option value="" selected>--- Choose your state---</option>
+
+               <optgroup label="Southeast States">
+               <option value="MG">Minas Gerais</option>
+               <option>Rio de Janeiro</option>
+               <option value="SP">Sao Paulo</option>
+               </optgroup>
+
+               <optgroup label="Northeast States">
+                <option value="MA">Maranhao</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+               </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iocc">Occupation:</label>
+            <input type="text" name="occupation" id="iocc" list="liocc" placeholder="Type or choose your occupation" size="30" required>
+            <datalist id="liocc">
+                <option value="Engineer">
+                <option value="Doctor">
+                <option value="Teacher">
+                <option value="Artist">
+                <option value="Scientist">
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensage:</label>
+            <textarea name="Mensage" id="imsg" cols="30" rows="5"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

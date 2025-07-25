@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formaulary</title>
+</head>
+<body>
+    <h1>Sum numbers</h1>
+    <form action="record.php" method="get" autocomplete="on">
+        <p>
+            <label for="num1">Number 01:</label>
+            <input type="number" name="num1" id="num1" value="0" min="0" max="100" step="1" oninput="sum.innerHTML = Number(num1.value)+Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">Number 02:</label>
+            <input type="number" name="num2" id="num2" value="0" min="0" max="100" step="1" oninput="sum.innerHTML = Number(num1.value)+Number(num2.value)">
+        </p>
+        <p>
+            <label for="sum">Result:</label>
+            <output name="result" id="sum">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

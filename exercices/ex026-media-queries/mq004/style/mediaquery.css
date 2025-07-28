@@ -1,0 +1,55 @@
+/*
+Common Breakpoint Ranges:
+
+Mobile (Small):
+320px - 480px. Often used for smartphones in portrait orientation.
+
+Mobile (Large):
+481px - 767px. Can accommodate larger phones or landscape orientation on smaller devices.
+
+Tablet:
+768px - 1024px. Suitable for tablets, potentially introducing two or three-column layouts.
+
+Desktop:
+1025px and up. This range can be further divided into smaller desktops, laptops, and large monitors. 
+*/
+
+
+@media print{
+    #pc{display: none;}
+    #tablet{display: none;}
+    #tv{display: none;}
+    #print{display: none;}
+    #phone{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #pc{display: none;}
+    #tablet{display: block;}
+    #tv{display: none;}
+    #print{display: none;}
+    #phone{display: none;}
+    body{
+        background-image: url(../images/back-tablet.jpg);}
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    #pc{display: block;}
+    #tablet{display: none;}
+    #tv{display: none;}
+    #print{display: none;}
+    #phone{display: none;}
+    body{
+        background-image: url(../images/back-pc.jpg);}
+}
+
+@media screen and (min-width: 1441px){
+    #pc{display: none;}
+    #tablet{display: none;}
+    #tv{display: block;}
+    #print{display: none;}
+    #phone{display: none;}
+    body{
+        background-image: url(../images/back-tv.jpg);}
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background-color: #f0f0f0;
+}
+
+header h1{
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    background-color: grey;
+}
+
+li{
+    display: inline-block;
+    margin: 0 10px;
+}

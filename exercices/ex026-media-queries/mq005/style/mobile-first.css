@@ -8,6 +8,21 @@ body{
     background-color: darkgray;
 }
 
+#burguer{
+    width: 100vw;
+    background-color: rgb(90, 90, 90);
+    text-align: center;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+
+}
+
 header{
     background-color: lightgrey;   
     padding: 20px 0 0 0; 
@@ -18,8 +33,8 @@ header h1{
     text-align: center;
 }
 
-ul {
-    margin: 20px 0 0 0;
+menu{
+    display: none;
 }
 
 li a{

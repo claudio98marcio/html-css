@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 Common Breakpoint Ranges:
 
@@ -14,12 +16,30 @@ Desktop:
 1025px and up. This range can be further divided into smaller desktops, laptops, and large monitors. 
 */
 
+--!
+    For some reason, the media print doesn't work.
+!--
+
 
 @media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main::after{
+        content: "Printed on " attr(data-print-date);
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.8rem;
+        color: #000;
+        
+    }
+
     #pc{display: none;}
     #tablet{display: none;}
     #tv{display: none;}
-    #print{display: none;}
+    #print{display: block;}
     #phone{display: none;}
 }
 

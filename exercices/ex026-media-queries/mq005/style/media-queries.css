@@ -1,7 +1,18 @@
-{
-    display: inline-block;
-    margin: 0 3px;
-    background-color: grey;
-    padding: 5px;
-    border-radius: 5px 5px 0 0;
+@media screen and (min-width: 768px) {
+    
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
 }

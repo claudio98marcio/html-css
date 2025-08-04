@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wraped elemnts</title>
+     <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            background-color: grey;
+
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid white;
+
+            height: 500px;
+
+           display: flex;
+           flex-flow: row wrap;
+           align-items: flex-end;
+        }
+
+        .item{
+            background-color: lightgrey;
+
+            text-align: center;
+            margin: 5px;
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+
+    </style>
 </head>
 <body>
-    
+     <main>
+        <div class="container" id="c01">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+        </div>
+    </main>
 </body>
 </html>

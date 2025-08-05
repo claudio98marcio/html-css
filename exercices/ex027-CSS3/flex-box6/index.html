@@ -17,12 +17,17 @@
             border-radius: 20px;
             border: 1px solid white;
 
+            height: 500px;
+
            display: flex;
            flex-flow: row nowrap;
+           align-items: flex-start;
         }
 
         .item{
             background-color: lightgrey;
+
+            width: 100px;
 
             text-align: center;
             margin: 5px;
@@ -32,22 +37,30 @@
         }
 
         #b1{
-            flex-basis: 250px;
-            flex-grow: 0;
-            flex-shrink: 2;
+            flex-basis: auto;
         }
         
         #b2{
-            flex-basis: 250px;
-            flex-grow: 2;
-            flex-shrink: 1;
+            flex-basis: auto;
         }
         
         #b3{
-            flex-basis: 250px;
-            flex-grow: 1;
-            flex-shrink: 0;
+            flex-basis: auto;
         }
+        
+        #b4{
+            flex-basis: auto;
+        }
+        
+        #b5{
+
+            flex-basis: auto;
+        }
+        
+        #b6{
+            flex-basis: auto;
+        }
+
 
     </style>
 </head>
@@ -55,8 +68,11 @@
      <main>
         <div class="container">
             <div class="item" id="b1">A</div>
-            <div class="item" id="b2">B</div>
+            <div class="item" id="b2">BBBBBBBB</div>
             <div class="item" id="b3">C</div>
+            <div class="item" id="b4">D</div>
+            <div class="item" id="b5">E</div>
+            <div class="item" id="b6">F</div>
         </div>
     </main>
 </body>

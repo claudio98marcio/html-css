@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wraped elemnts</title>
+     <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            background-color: grey;
+
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid white;
+
+            height: 500px;
+
+           display: flex;
+           flex-flow: row wrap;
+           align-items: flex-start;
+        }
+
+        .item{
+            background-color: lightgrey;
+
+            text-align: center;
+            margin: 5px;
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+
+        #b1{
+            align-self: auto;
+            order: -5;
+        }
+        
+        #b2{
+            align-self: flex-start;
+            order: 3;
+        }
+        
+        #b3{
+            align-self: flex-end;
+            order: 15;
+        }
+        
+        #b4{
+            align-self: center;
+            order: 3;
+        }
+        
+        #b5{
+            align-self: stretch;
+            order: 0;
+        }
+        
+        #b6{
+            align-self: center;
+            order: -1;
+        }
+
+
+    </style>
+</head>
+<body>
+     <main>
+        <div class="container">
+            <div class="item" id="b1">A</div>
+            <div class="item" id="b2">B</div>
+            <div class="item" id="b3">C</div>
+            <div class="item" id="b4">D</div>
+            <div class="item" id="b5">E</div>
+            <div class="item" id="b6">F</div>
+        </div>
+    </main>
+</body>
+</html>

@@ -38,11 +38,11 @@ menu{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
-
 }
 
 menu > a{
     padding: 10px;
+    margin: 5px;
     
     background-color: hsl(195, 90%, 45%);
     border: 1px solid hsl(195, 90%, 20%);
@@ -53,6 +53,9 @@ menu > a{
     text-decoration: none;
     color: white;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+
+    align-self: center;
+    flex: 1 0 auto;
 }
 
 a:hover{

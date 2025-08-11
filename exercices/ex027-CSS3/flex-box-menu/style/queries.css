@@ -1,11 +1,12 @@
 @media screen and (max-width: 768px) {
-header{
-    flex-flow: column wrap;
+header, header > menu{
+    flex-flow: column nowrap;
     align-items: center;
 }
 
-menu{
-    flex-flow: row wrap;
-    align-items: ;
+header > menu > a{
+    width: 90vw;
+    margin: 5px 0;
+    font-size: 1.1em;
 }
 }

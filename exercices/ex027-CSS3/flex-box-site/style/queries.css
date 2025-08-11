@@ -1,0 +1,11 @@
+@media screen (min-width :768px){
+    #img-txt{
+    flex-flow: row nowrap;
+    
+    background-color: red;
+}
+
+#cnt-01{
+
+}
+}

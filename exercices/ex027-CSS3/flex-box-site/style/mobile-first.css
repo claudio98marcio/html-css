@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, main, footer {
+    padding: 1rem;
+}
+
+header {
+    background-color: #f8f9fa;
+    
+    text-align: center;
+}
+
+header h1{
+    margin: 10px 0;
+}
+
+header > p{
+    text-align: center;
+}
+
+#image01{
+    height: 300px;
+    width: 300px;
+
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    background-size: cover;
+
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1b/John_William_Godward_-_The_Signal.jpg);    
+}
+
+#mediaelements{
+    padding: 10px;
+
+    background-color: lightgray;
+}
+
+#mediaelements h2,p{
+    margin: 10px 0;
+    text-align: justify;
+}
+
+#img-txt{
+    flex-flow: column nowrap;
+    
+    background-color: red;
+}
+
+#cnt-01{
+}
+
+
+
+
+
+#txt-video{
+    height: 500px;
+
+    flex-flow: column nowrap;
+    align-items: stretch;
+
+    background-color: blue;
+}
+
+#txt-video > iframe,#cnt-02{
+    align-self: center;
+}

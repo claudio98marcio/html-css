@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/mobile-first.css">
-    <link rel="stylesheet" href="style/queries.css">
     <title>First Site uing Flexbox</title>
 </head>
 <body>
@@ -13,26 +12,34 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </header>
     <main>
-        <article id="mediaelements">
-            <div id="img-txt">
-                <div id="image01"></div>
-                
+        <section class="flex-content">
+            <article class="media-text">
+                <div class="text">
                     <h2>Media element > Txt</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                
-            </div>
-            <div id="txt-video">
-                <iframe width="560" height="300" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=ERewlESkb2ATmbKt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div id="cnt-02">
-                <h2>Element Text > Media</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolore, nisi sed provident explicabo nesciunt ipsum quaerat fugit esse, eum minus mollitia minima vero nemo delectus! Iste porro quas amet.</p>
                 </div>
-            </div>
-        </article>
-        <article>
-            <h2></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
+                <div class="media">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/John_William_Godward_-_The_Signal.jpg" alt="image01">
+                </div>
+            </article>
+
+            <article class="text-media">
+                <div class="text">
+                    <h2>Element Text > Media</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolore, nisi sed provident explicabo nesciunt ipsum quaerat fugit esse, eum minus mollitia minima vero nemo delectus! Iste porro quas amet.</p>
+                </div>
+                <div class="media">
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/VBGMnFHRqcY?si=ERewlESkb2ATmbKt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <section>
+           <article>
+                <h2>End of road</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article> 
+        </section>       
     </main>
 </body>
 </html>

@@ -1,0 +1,38 @@
+.container{
+    border: solid 0.5px blue;
+    padding: 10px;
+    
+    display: grid;
+    grid-template: repeat(4, 100px)/repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.box1{
+    background-color: lightblue;
+    border: solid red;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.box2{
+    background-color: lightcoral;
+    border: solid red;
+
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
+}
+
+.box3{
+    background-color: lightgreen;
+    border: solid red;
+
+    grid-row-start: 4;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}

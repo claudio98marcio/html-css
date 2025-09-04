@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            border: solid 0.5px blue;
+
+            display: grid;
+            
+            /* grid-template: row/column*/
+            grid-template: repeat(3, 100px) / repeat(3, auto);
+            
+            grid-gap: 20px;
+        }
+
+        .item{
+            border: solid 2px red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header> Fisrt time with him</header>
+    <main>
+        <div class="container">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </main>
+</body>
+</html>
